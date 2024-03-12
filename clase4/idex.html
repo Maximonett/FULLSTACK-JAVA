@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <!--Nombre-->
+        <label for="nombre" class="labelregistro">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba aqui su nombre" maxlength="5" minlength="3" value="Max">
+        <!--???-->
+        <br>
+        <br>
+        <label for="mail" class="labelregistro">Mail:</label>
+        <input type="text" id="mail" name="mail" disabled placeholder="Escriba aqui su mail" readonly value="maximosimonetti@gmail.com">
+        <!--???-->
+        <br>
+        <br>
+        <label for="pass" class="labelregistro">Password:</label>
+        <input type="password" pattern="">
+        <!--???-->
+        <br>
+        <br>
+        <label for="altura" class="labelregistro">Altura:</label>
+        <input type="number" max="240" min="20" id="altura">
+<hr>
+        <input type="date">
+<br>
+<br>
+        <input type="submit" value="Enviar" class="botonEnviar">
+<br>
+<br>
+        <input type="image">
+<br>
+<br>
+        <input type="file" accept=".pdf">
+<br>
+<br>
+        <input type="range">
+<hr>
+        <h2>Check BOX</h2>
+
+        <input type="checkbox" value="1" name="opciones">Fiat
+        <input type="checkbox" value="2" name="opciones">Ford
+        <input type="checkbox" value="3" name="opciones">Renault
+        <input type="checkbox" value="4" name="opciones">Chevrolet
+        <hr>
+        <h2>Radio Button</h2>
+
+        <input type="radio" value="1" name="opciones">Fiat
+        <input type="radio" value="2" name="opciones">Ford
+        <input type="radio" value="3" name="opciones">Renault
+        <input type="radio" value="4" name="opciones">Chevrolet
+    <hr>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="20" rows="10"></textarea>
+
+    <hr>
+        <h3>Provincias</h3>
+        <select name="provincias" id="provincias">
+            <option value="1">Salta</option>
+            <option value="2">Cordoba</option>
+            <option value="3">Formosa</option>
+        </select>
+        <hr>
+        <h3>Autos</h3>
+        <select name="" id="">
+            <optgroup label="Nacionales">
+                <option value="">Ford</option>
+                <option value="">Fiat</option>
+                <option value="">Gordini</option>
+            </optgroup>
+            <optgroup label="Internacionales">
+                <option value="">Subaru</option>
+                <option value="">Nissan</option>
+                <option value="">Mercedes Benz</option>
+            </optgroup>
+        </select>
+        
+
+
+
+
+
+
+    </form>
+</body>
+</html>
