@@ -1,0 +1,21 @@
+Instrucciones de GIT
+
+git add index.html
+
+git add .
+
+git status 
+
+git commit -m "primerCommit"
+
+git log
+
+git branch 
+
+git branch -m main
+
+git push  (es para subir en la nuve)
+
+git pull (es para actualizar la carpeta)
+
+git clone  http//....etc (trae a tu pc lo que esta )
