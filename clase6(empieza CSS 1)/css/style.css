@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+/*delectores de etiqueta*/
+body{
+    background-color: gray;
+
+}
+
+p{
+    color: white;
+    font-size: 25px;
+}
+
+h1,h2,h3{
+    color: aquamarine;
+}
+
+/*delectores ID*/
+#textoAzul{
+    color: blue;
+}
+#textoRojo{
+    color: red;
+}
+
+/*Selectores de Clases*/
+.textoAmarillo{
+    color: yellowgreen;
+}
+.textoGrande{
+    font-size: 30px;
+}
+.textoMediano{
+    font-size: 12px;
+}
+
+/*Especificidad*/
+
+div{
+    background-color: aquamarine;
+    width: 200px;
+    height: 50px;
+}
+h3{
+    color: red !important;
+}
+.titulo{
+    color: blue;
+}
+#titulo{
+    color: yellow;
+}
