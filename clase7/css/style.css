@@ -1,0 +1,41 @@
+:root
+{
+--color-succes:green;  
+--color-danger:red;
+--color-caution:#1eede0;
+/*--tamaño-fuente:20px;*/
+font-size: 20px;
+}
+
+#ejemploAbsoluto{
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-caution);
+}
+
+body{
+    background-color: var(--color-succes);
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+h1{
+    font-size: 0,5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    font-size: 1,5rem;
+}
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
