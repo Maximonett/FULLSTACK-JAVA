@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*Adapta el heigh y el with*/
+
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+}
+#caja1{
+
+    /*margin-left: 20px;
+    margin-top: 20px;*/
+    margin: 20px 0px 5px 5px; /* sup derecho abajo izq */
+    border-radius: 50%; /*borde redondeado*/
+}
+#caja2{
+    border: 5px solid black;
+    width: 190px;
+    overflow: hidden;
+    overflow: scroll;
+}
+#caja3{
+    padding: auto;
+    border-top: 5px dotted yellow;
+    border-bottom: 10px double grey;
+    border-right:10px dashed red ;
+    border-left: ;
+    overflow: hidden;
+}
+#caja4{
+    padding-left:30px; /*El padding amplia la caja si es de 200 el padding la lleva a 230*/
+    width: 170px;
+    padding-top: 50px;
+    height: 170px;
+    box-sizing: border-box;
+
+}

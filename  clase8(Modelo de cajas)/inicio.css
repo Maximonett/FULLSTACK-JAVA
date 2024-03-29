@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pSticky{
+    position: sticky;
+    background-color: aquamarine;
+}
