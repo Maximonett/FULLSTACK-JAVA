@@ -1,0 +1,31 @@
+
+/*Selector agrupado con coma
+p,span,h1{
+    color: red;
+}
+
+.texto,#textoPrincipal,h1{
+    color: red;
+}*/
+
+div p{
+    color: red; /* Este color solo se pintara en el parrafo dentro del div*/
+}
+/*TODOS LOS P CON CLASE  .TEXTO*/
+.texto p {
+    color: yellowgreen;
+}
+/*Hijas directas de un div*/
+div>p{
+    color: blueviolet;
+}
+/*Hijas directas de un span*/
+span>p{
+    color: rgb(43, 153, 226);
+}
+
+#textoAmarillo{
+    color: yellow;
+}
+/*todos los hijos de body que sen el mismo nivel jeraquico entre si*/
+body>div~p{color: cadetblue;} 

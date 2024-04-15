@@ -1,0 +1,32 @@
+p:first-child{
+    color: red;
+}
+P:last-child{
+    color: blue;
+}
+p:nth-child(3){color: tomato;}
+
+p:nth-child(2n){
+    columns: yellow;
+}
+p:nth-child(even){background-color: aquamarine;}
+
+p:nth-child(odd){background-color: brown;}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+
+}
+
+.cuadrado:hover{
+    background-color: blue;
+}
+
+p::first-letter{color: blueviolet;}
+
+p::first-line{color: aquamarine;}
+
+p::before{content: "#";} /*poner un emoji*/
+p::after{content: "#";}

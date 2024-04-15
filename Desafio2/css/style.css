@@ -62,6 +62,7 @@ h1,h2{
     top: 10%;
     transform: translateY(50%);
     align-items: center;
+    size: 50px;
 }
 
 .form-group{
