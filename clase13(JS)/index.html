@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="texto"></h1>
+    <script>
+        let numero =2; //operdaor de asignacion+
+        let valor=8;
+        numero =valor;
+        let nuemro2=10;
+        let $numero=34; //si pueden emepzar con un signo pesos
+        var indice=2; // var me permite usar el mismo nombre de variable... solo se usa para variables locales
+        // ademas destruye a la anterior
+        var indice="nicolas";
+
+        var nombreCompleto="Nicolas Fernandez";
+        //variables primitivas
+        let cifra=14; //tipo de dato number
+        let apellido="Simonetti";// tipo string
+        let habilitado=true; //tipo boolean
+        let nulo=null;
+        let indefinido;//Undefined
+        let simbolo=Symbol("UnSimbolo");
+
+        //tipo objeto ARCHIVO JASON!!!!! 
+        let cliente={nombre:"Nicolas", apellido:"Fernandez", edad:40};
+        let nota1=10;
+        let nota2=8;
+        let nota=3;
+
+        let notas=[10,4,1,null,5,4,"Nicolas",9,7,true,7]; //0 1 2 3 4 5 6 7 8 9 10 
+
+        let funcion= function() { console.log("Hola Mundo...");};
+        //constantes
+        const dolar=975;
+        console.log("hola Mundo....");
+        console.log(dolar); //imprimir la variable dolar en la consola 
+        console.log("el valor del dolar es: " + dolar + " mañana quien sabra");
+
+        document.getElementById("texto").innerHTML="Hola Mundo " + dolar;
+
+        document.getElementById("texto").innerHTML="El valor del dolar es " + dolar;// este piso al anterior
+
+        document.getElementsByClassName("texto").innerHTML="Hola Mundo " + dolar;
+        
+    </script>
+</body>
+</html>
