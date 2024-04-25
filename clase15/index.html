@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var opc=2;
+
+        // opc=prompt("ingrese un valor: ");
+        opc=parseInt(opc);  //esto parsea lo pasa a entero en vez de dejarlo en string
+        //se puede cambiar los case por string....
+        switch(opc){
+            case 1://si opc vale 1 
+                    {
+                        console.log("la variable vale 1");
+                        break //sino lo pongo sigue ejecutando para abajo
+                    }
+            case 2:
+                    {
+                        console.log("la variable vale 2");
+                        break
+                    }
+            case 3:
+                    {
+                        console.log("la variable vale 3");
+                        break
+                    }
+            default:
+                    {
+                        console.log("la variable vale otro valor");
+                        break
+                    }
+        }
+
+        // alert("cuidado");   //ventana emergente!!!
+
+        //ITERACIONES 
+
+        // do while 
+
+        var aux=1000;
+
+        do{ //SE EJECUTA AL MENOS UNA VEZ!!!!
+            console.log("Se imprimio la linea "+ aux);
+            aux++; //aux=aux + 1
+        }while(aux<10);
+
+        x=0;
+        var repeticion=prompt("Cantidad de veces: ");
+        //while SI NO SE CUMPLE NO SE EJECUTA
+        while (x<repeticion) {
+            console.log("Se imprimo con WHILE " + x);
+            x++;
+        }
+
+        //for
+        var numeros=["nico",1,8,true,false,null,undefined,"HOLA MUNDO"];
+
+        console.log(numeros);
+        var suma=numeros[1]+numeros[2];
+        console.log(suma);
+
+        for (let x = 0; x <10 ; x++) {
+            console.log("el valor en la pos.["+ x + "]");
+        }
+        
+        for (let x = 0; x <numeros.length ; x++) {
+            console.log("el valor en la pos.["+ x + "]: " + numeros[x]);    
+        }
+        
+    </script>
+</body>
+</html>
