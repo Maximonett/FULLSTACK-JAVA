@@ -9,7 +9,7 @@
     <table>
         <tr>
             <td>Valor 1:</td>
-            <td><input type="number"></td>
+            <td><input type="number" id="valor1" value=""></td>
         </tr>
         <tr>
             <td>Valor 1:</td>
@@ -20,11 +20,11 @@
                 <select name="" id="operacion"></select>
                 <option value="1">Suma</option>
                 <option value="">Resta</option>
-                <option value="">Suma</option>
-                <option value="">Suma</option>
+                <option value="">Mult.</option>
+                <option value="">Division</option>
             </td>
             <td>
-                <input type="button" value="calcular" onclick="calcular">
+                <input type="button" value="calcular" onclick="calcular();">
             </td>
             <tr>
                 <td>Resultado:</td>
@@ -32,5 +32,6 @@
             </tr>
         </tr>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>

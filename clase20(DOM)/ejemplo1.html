@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 id="titulo">Texto a cambiar</h2>
+    <p id="parrafo">Presionar en el Boton</p>
+
+    <button onclick="cambiarTexto();">Cambiar Texto</button>
+    <script>
+        function cambiarTexto(){
+            var titulo =document.getElementById("titulo");
+            var parrafo =document.getElementById("parrafo");
+
+            titulo.textContent="Titulo nuevo";
+            parrafo.textContent="Este es un parrafo nuevo";
+
+            //estilo
+            titulo.style.color="blue";
+            parrafo.style.fontWeight="bold";
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
