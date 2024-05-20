@@ -6,6 +6,7 @@ fetch('https://randomuser.me/api/')
         let apellido = usuario.name.last;
         let mail = usuario.email;
         let password = usuario.login.password;
+        
 
         const first = document.getElementById('nombre');
         first.innerHTML = `${nombre}`;
@@ -15,6 +16,7 @@ fetch('https://randomuser.me/api/')
         email.innerHTML = `${mail}`;
         const pass = document.getElementById('password');
         pass.innerHTML = `${password}`;
+        
 
     })
     .catch(error => {

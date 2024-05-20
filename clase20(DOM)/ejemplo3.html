@@ -13,22 +13,21 @@
     <p class="parrafo">Parrafo a Cambiar 3</p>
     <button id="boton">Cambiar Texto</button>
     <script>
-        document.querySelector("#boton").addEventListener
-            ("click",function()
-            {
-                var titulo=document.querySelector("#titulo");
-                var parrafo=document.querySelectorAll(".parrafo");
+        document.querySelector("#boton").addEventListener("click", function() {
+            // Selecciona el elemento con el ID "titulo"
+            var titulo = document.querySelector("#titulo");
+            // Selecciona todos los elementos con la clase "parrafo"
+            var parrafos = document.querySelectorAll(".parrafo");
 
-            titulo.style.color="blue";
+            // Cambia el color del texto del título a azul
+            titulo.style.color = "blue";
 
-            parrafo.forEach(function(parrafo){
-                parrafo.style.fontWeight="bold";
+            // Para cada párrafo en la lista de párrafos
+            parrafos.forEach(function(parrafo) {
+                // Cambia el peso de la fuente a negrita
+                parrafo.style.fontWeight = "bold";
             });
-
-
-            })
-
-
+        });
     </script>
 </body>
 </html>

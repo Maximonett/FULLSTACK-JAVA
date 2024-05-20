@@ -1,0 +1,56 @@
+
+BASES DE DATOS (B.B.D.D.)
+
+-motor de base de datos 
+-un gestor de base de datos:programa que se va a usar para administrar el motor.
+
+*CLI: MySQL shell
+*Gui:(phpMyadmin, mySql,heidiSQL,Workbench)
+
+
+XAMPP hace todo!!!!
+Apache + MariaDB + PHP+Perl
+
+CONFIGURACION:
+
+hostname 127.0.0.1
+
+port 3606
+
+Entidad: conjunto de informacion menor que voy a tener en una base de datos.
+        Respresentan cosas u objetos.
+
+Necesito hacer un plano antes de contruirla!!!!
+
+Varchar es dinamico en  cambio Char no!! se adaota a la cantidad que sse guarde y 
+tiene un limite de 100 caracteres.
+
+Constrain o Restircciones
+
+-NOT NULL 
+-UNIQUE (SE USA PARA MAILS)
+-DEFAULT (NO ES NECEARIO )
+-PRIMARI KEY: QUE LE VA A ASIGNAR (ID) PK EL MOTOR DE BASE DE DATOS 
+-FOREING KEY : UN DATO QUE TENGO DE NA TABLA Y QUE ES PRIMARY KEY EN OTRA TABLA.
+
+
+
+pasos 
+1- create database prueba1; 
+2- use prueba1;
+3-craete table clientes;  // me va a tirar erro porque esta vacia
+
+create table clientes (
+    id int
+);
+
+drop  table clientes; // elimina la tabla de clientes
+
+create table personal(
+    id not null auto_increment primary key, 
+    nombre varchar(35),
+    apellido varchar(35) not null,
+    dni int unique,
+    mail varchar (40) unique,
+    habilitado boolean default true,
+);
