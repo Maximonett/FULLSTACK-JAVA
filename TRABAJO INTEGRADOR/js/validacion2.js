@@ -29,6 +29,7 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
     // Validar cada campo
     if (nombre === "") {
         nombreError.textContent = "El nombre no puede estar vacío";
+        
         return;
     }
     if (apellido === "") {

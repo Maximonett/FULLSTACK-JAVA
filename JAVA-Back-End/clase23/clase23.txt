@@ -1,0 +1,12 @@
+MANIPULACION DE TABLAS
+
+create :crea
+puede crear lista, tablas
+
+alter :modifica 
+
+drop: elimina 
+
+truncate: vacia tablas pero no borra la tabla 
+
+
