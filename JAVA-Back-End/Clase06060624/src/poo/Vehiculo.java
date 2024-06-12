@@ -8,14 +8,16 @@ package poo;
  *
  * @author maximosimonetti
  */
-public class Vehiculo {
+public abstract class Vehiculo {
     
     //atributos
-    public String marca;
-    public String modelo;        
-    public int año;
-    public String color;
-    public double precio;
+    private String marca;
+    private String modelo;        
+    private int año;
+    private String color;
+    private double precio;
+    private int tamañoTanque;
+    private int cantCombustible;
 
     //Metodo contructor por defecto 
     public Vehiculo()
@@ -25,6 +27,8 @@ public class Vehiculo {
         this.año=0;
         this.color="Desconocido";
         this.precio=0.0;
+        this.tamañoTanque=50;
+        this.cantCombustible=5;
     }
     //Metodo constructor siempre tiene el mismo nombre que la clase
     public Vehiculo(String marca,String modelo)
@@ -32,6 +36,64 @@ public class Vehiculo {
         this.marca = marca;
         this.modelo= modelo;
     }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public void setAño(int año) {
+        this.año = año;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getTamañoTanque() {
+        return tamañoTanque;
+    }
+
+    public void setTamañoTanque(int tamañoTanque) {
+        this.tamañoTanque = tamañoTanque;
+    }
+
+    public int getCantCombustible() {
+        return cantCombustible;
+    }
+
+    public void setCantCombustible(int cantCombustible) {
+        this.cantCombustible = cantCombustible;
+    }
+    
+    
     
     public Vehiculo(String marca,String modelo,int año)
     {
@@ -40,11 +102,28 @@ public class Vehiculo {
         this.año=año;
   
     }
+    public String imprimir3(){
     
-    public void imprimir(){
-        System.out.println("Marca: "+this.marca+" Modelo: "+this.modelo+" Año: "+this.año);
+        return  
+                "Marca "+ this.marca +" Modelo "+ this.modelo ;
+    }
+    
+    public String imprimir(){
+        return
+        "Marca: "+this.marca+" Modelo: "+this.modelo+" Año: "+this.año ;
         
     }
+    
+    public void acelerar(){
+        if(this.cantCombustible>1){
+        System.out.println("El auto acelero");
+        }else{
+            System.out.println("El auto no tiene combustible");
+        }        
+    }
+
+
+
 }
 
 
